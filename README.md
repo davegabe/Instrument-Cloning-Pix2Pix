@@ -1,9 +1,11 @@
-# Deep Audio Modelling
+# Instrument Cloning with Pix2Pix
 This repository contains the code for the project of the Big Data Computing course at the University of La Sapienza, Rome. For this course it was required to implement a Big Data application using the Apache Spark framework into a Google Colab notebook.
 
-# Task description: Audio Modelling
+# Task description: Instrument Cloning
 For this project I decided to implement a deep learning application able to synthesize audio of an instrument given a sequence of annotated notes (audio + midi information). 
 The application is based on a [Pix2Pix](https://arxiv.org/abs/1611.07004) architecture, which is a conditional GAN able to learn a mapping from input to output images. In this case the input is spectrogram of sawtooth/sinewave audio synthesized from midi information and the output is the spectrogram of the real audio of the instrument. 
+
+![Architecture](architecture.png)
 
 # Dataset
 The dataset used for this project is the [NSynth Dataset](https://magenta.tensorflow.org/datasets/nsynth), which contains 305,979 musical notes from 1,006 instruments annotated with midi information such as pitch and velocity.
